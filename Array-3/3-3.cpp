@@ -5,7 +5,7 @@ using namespace std;
 // O(n)
 int majorityElement(int arr[], int n) {
     int count = 0, element = 0;
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         if (count == 0)
             element = arr[i];
         (element == arr[i]) ? count++ : count--;
