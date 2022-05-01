@@ -3,6 +3,7 @@
 #include <vector>
 using namespace std;
 
+// Extended Boyer Moore's Voting algorithm
 // O(n)
 vector<int> majorityElement(int arr[], int n) {
     int c1 = 0, c2 = 0, e1 = 0, e2 = 0; // count, element/candidate

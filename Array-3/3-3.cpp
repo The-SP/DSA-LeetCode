@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+// Boyer Moore's Voting algorithm
 // O(n)
 int majorityElement(int arr[], int n) {
     int count = 0, element = 0;
