@@ -29,17 +29,14 @@ int longestSequenceHash(vector<int> arr) {
     set<int> hashSet;
     for (int num : arr)
         hashSet.insert(num);
+    // set<int> hashSet(nums.begin(), nums.end());
 
-    int maxLength = 0, current, length = 1;
+    int maxLength = 0, length;
     for (int num : arr) {
         if (!hashSet.count(num - 1)) {
-            current = num;
             length = 1;
-
-            while (hashSet.count(current + 1)) {
-                current++;
+            while (hashSet.count(num + length))
                 length++;
-            }
             maxLength = max(length, maxLength);
         }
     }

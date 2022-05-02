@@ -34,7 +34,7 @@ void twoSum(vector<int> &nums, int target) {
 
 // Hashing Method
 // Time: O(N) | Space: O(N)
-void fourSum(vector<int> &nums, int target) {
+void twoSumHash(vector<int> &nums, int target) {
     int n = nums.size();
     vector<int> pair;
     unordered_map<int, int> hash;
@@ -55,5 +55,5 @@ void fourSum(vector<int> &nums, int target) {
 int main() {
     vector<int> nums = {3, 2, 4};
     twoSum(nums, 6);
-    fourSum(nums, 6);
+    twoSumHash(nums, 6);
 }
