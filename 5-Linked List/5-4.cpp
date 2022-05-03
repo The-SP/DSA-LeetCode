@@ -16,10 +16,6 @@ ListNode *remvoeNthFromEnd(ListNode *head, int n) {
 // Traversw two times
 ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode *ptr = head;
-    if (head->next == NULL) { // only one node
-        delete ptr;
-        return NULL;
-    }
 
     // count no of nodes
     int i = 0;
