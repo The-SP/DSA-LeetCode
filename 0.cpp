@@ -2,11 +2,9 @@
 
 // Display 1D-Vector
 void display(vector<int> arr) {
-    for (int i=0; i<arr.size(); i++)
+    for (int i = 0; i < arr.size(); i++)
         cout << arr[i] << ' ';
 }
-
-
 
 // Display 2D-Vector
 void display(vector<vector<int>> arr) {
@@ -24,3 +22,13 @@ display(arr);
 // Size of 2D-vector
 int m = matrix.size();
 int n = matrix[0].size();
+
+// Linked List
+
+// Count no of nodes
+ListNode *ptr = head;
+int i = 0;
+while (ptr) {
+    ptr = ptr->next;
+    i++;
+}

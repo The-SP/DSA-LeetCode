@@ -20,7 +20,7 @@ ListNode *start(ListNode *head) {
     ;
     while (fast && fast->next) {
         slow = slow->next;
-        fast = fast->next;
+        fast = fast->next->next;
 
         if (slow == fast) {
             while (slow != entry) {
