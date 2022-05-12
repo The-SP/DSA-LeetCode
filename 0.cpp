@@ -32,3 +32,16 @@ while (ptr) {
     ptr = ptr->next;
     i++;
 }
+
+// Greedy
+
+// Pair
+pair<int, int> ans;
+return make_pair(result_a, result_b);
+cout << ans.first << ' ' << ans.second;
+
+// Sorting
+sort(arr, arr + n, comparator);
+bool static comparator(Item a, Item b) {
+    return double(a.value) / a.weight > double(b.value) / b.weight;
+}
